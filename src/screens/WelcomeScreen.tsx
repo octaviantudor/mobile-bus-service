@@ -62,7 +62,7 @@ const WelcomeScreen: React.FC<StackScreenProps<any>> = ({navigation}) => {
 const styles = StyleSheet.create({
     welcomeText:{
         fontSize: 32,
-        color: 'white',
+        color: 'black',
     },
     container: {
         flex: 1,

@@ -48,7 +48,7 @@ const HomeScreen: React.FC<StackScreenProps<any>> = ({navigation}) => {
 
         await sendPushNotification({
             pushToken: token,
-            message: "exp://192.168.0.43:19000/--/curse",
+            message: "exp://192.168.100.100:19000/--/curse",
             title: "hello"
         });
     }
@@ -85,7 +85,7 @@ const HomeScreen: React.FC<StackScreenProps<any>> = ({navigation}) => {
 const styles = StyleSheet.create({
     homeText: {
         fontSize: 32,
-        color: 'white',
+        color: 'black',
     },
     container: {
         flex: 1,

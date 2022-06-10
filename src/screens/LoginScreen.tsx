@@ -63,19 +63,19 @@ const LoginScreen = () => {
 const styles = StyleSheet.create({
     loginText:{
         fontSize: 32,
-        color: 'white',
+        color: 'black',
     },
     container: {
         flex: 1,
         paddingTop: 20,
-        backgroundImage: "linear-gradient(to top, #30cfd0 0%, #330867 100%)",
+        backgroundImage: "blue",
         alignItems: 'center',
         justifyContent: 'center',
     },
 
 
     inputContainer: {
-        width: '20%',
+        width: '60%',
         paddingTop: 40
     },
     input: {

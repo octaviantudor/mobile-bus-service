@@ -85,7 +85,7 @@ const EditScreen: React.FC<StackScreenProps<any>> = ({navigation}) => {
 const styles = StyleSheet.create({
     editText: {
         fontSize: 32,
-        color: 'white',
+        color: 'black',
     },
     container: {
         flex: 1,

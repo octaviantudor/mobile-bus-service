@@ -32,7 +32,7 @@ const Cursa: React.FC<{ cursa: ICursa; index: number }> = ({cursa, index}) => {
 
 const styles = StyleSheet.create({
     container: {
-        width: 500,
+        width: 200,
         height: 100,
         borderStyle: "solid",
         borderColor: "black",

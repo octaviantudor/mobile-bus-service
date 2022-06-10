@@ -26,6 +26,7 @@ const SignUpScreen: React.FC<StackScreenProps<any>> = ({navigation}) => {
 
     async function signUp() {
         const token= await generatePushNotificationsToken();
+        console.log(token);
         if (value.email === '' || value.password === '') {
             setValue({
                 ...value,
