@@ -2,10 +2,12 @@ import React, {useState} from "react";
 import {StackScreenProps} from "@react-navigation/stack";
 import CursaContext, {ICursa} from "../context/CursaContext";
 import styled from "styled-components/native";
+import {StyleSheet, Text, TextInput, View} from "react-native";
 import {StatusBar} from "expo-status-bar";
 import CursaInput from "../components/CursaInput";
 import {FlatList} from "react-native";
 import Cursa from "../components/Cursa";
+
 const Container=styled.View`
   padding: 8px;
   height: 100%;
@@ -17,8 +19,7 @@ const Space=styled.View`
   height: 8px;
 `
 
-const CurseScreen: React.FC<StackScreenProps
-<any>> = ({navigation}) => {
+const CurseScreen: React.FC<StackScreenProps<any>> = ({navigation}) => {
     const [curse, setCurse]=useState<ICursa[]>([]);
     const addCursa=(newItem: ICursa)=>{
         setCurse([...curse,newItem]);
@@ -26,10 +27,10 @@ const CurseScreen: React.FC<StackScreenProps
 
     console.log(curse);
     return (
-        <Container>
+        <Container style={styles.container}>
             <StatusBar/>
             <CursaContext.Provider value={{
-                addCursa
+                addCursa,
             }}>
                 <CursaInput/>
                 <Space/>
@@ -47,6 +48,17 @@ const CurseScreen: React.FC<StackScreenProps
 
     )
 }
+
+const styles = StyleSheet.create({
+
+    container: {
+        flex: 1,
+        paddingTop: 20,
+        backgroundImage: "linear-gradient(to top, #30cfd0 0%, #330867 100%)",
+        alignItems: 'center',
+        justifyContent: 'center',
+    },
+});
 
 
 export default CurseScreen;

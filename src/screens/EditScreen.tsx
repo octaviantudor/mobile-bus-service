@@ -46,7 +46,7 @@ const EditScreen: React.FC<StackScreenProps<any>> = ({navigation}) => {
 
     return (
         <View style={styles.container}>
-            <Text>Edit info screen!</Text>
+            <Text style={styles.editText}>Edit info screen!</Text>
             <Space/>
             <View style={styles.inputContainer}>
 
@@ -83,10 +83,14 @@ const EditScreen: React.FC<StackScreenProps<any>> = ({navigation}) => {
 }
 
 const styles = StyleSheet.create({
+    editText: {
+        fontSize: 32,
+        color: 'white',
+    },
     container: {
         flex: 1,
         paddingTop: 20,
-        backgroundColor: 'grey',
+        backgroundImage: "linear-gradient(to top, #30cfd0 0%, #330867 100%)",
         alignItems: 'center',
         justifyContent: 'center',
     },
